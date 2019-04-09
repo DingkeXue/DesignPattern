@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>构建者模式</title>
+    <style>
+        #create {
+            margin: 100px;
+        }
+        .form-group {
+            margin: 10px;
+        }
+        input, button {
+            padding: 10px;
+        }
+        button {
+            margin-left: 10px;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+<div id="create">
+    <form id="form">
+        <div class="form-group">
+            <label for="name">
+                姓名：
+            </label>
+            <input type="text" id="name" placeholder="请输入姓名">
+        </div>
+        <div class="form-group">
+            <label>
+                性别：
+            </label>
+            <input type="radio" class="gender" value="男" name="gender" checked>男
+            <input type="radio" class="gender" value="女" name="gender">女
+        </div>
+        <div class="form-group">
+            <label for="age">
+                年龄：
+            </label>
+            <input type="number" id="age" placeholder="请输入年龄">
+        </div>
+        <button type="submit">提交</button>
+    </form>
+</div>
+<script src="ES6.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>工厂模式</title>
+    <style>
+        #wrapper {
+            margin: 100px;
+            width: 400px;
+        }
+        .form-group {
+            margin: 10px;
+        }
+        input, button, select {
+            padding: 10px;
+        }
+        button {
+            margin-left: 20px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form">
+            <div class="form-group">
+                <label for="name">
+                    姓名：
+                </label>
+                <input type="text" id="name" placeholder="请输入姓名" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    文理科：
+                </label>
+                <select name="subject" id="subject">
+                    <option value="文科">文科</option>
+                    <option value="理科">理科</option>
+                    <option value="艺术生">艺术生</option>
+                </select>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script src="ES6.js"></script>
+</body>
+</html>
