@@ -1,0 +1,24 @@
+.wrapper {
+    margin: 50px auto;
+    width: 500px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+.part,
+.toll {
+    margin: 10px;
+}
+
+strong {
+    color: red;
+}
+
+input, button {
+    padding: 5px;
+    margin: 5px;
+}
