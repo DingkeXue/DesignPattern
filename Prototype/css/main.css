@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+h2,
+.table {
+    text-align: center;
+}
+
+.wrapper {
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid rgba(0, 0, 0, .4);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+
+.btn,
+.table {
+    width: 100%;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+tbody tr:hover {
+    background: #00bcd440;
+}
