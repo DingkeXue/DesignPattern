@@ -37,4 +37,6 @@
     var factory = userProducer('teacher');
     var st = factory('刘备备');
     console.log(st);
+
+
 })();
