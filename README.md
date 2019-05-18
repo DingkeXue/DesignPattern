@@ -1,2 +1,2 @@
-# DesignPattern
-设计模式学习
+# JavaScript 设计模式
+> 面向对象编程特点：封装，继承，多态

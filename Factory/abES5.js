@@ -1,3 +1,7 @@
+/*
+* 抽象工厂模式
+* */
+
 ;(function () {
     function Student(name) {
         this.name = name;

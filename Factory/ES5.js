@@ -1,3 +1,7 @@
+/*
+* 简单工厂模式
+* */
+
 ;(function () {
     let Form = document.getElementById('form');
 
@@ -20,6 +24,7 @@
         this.subject = subject;
     }
 
+    // 为不同类型的学生创建不同的实例化对象
     function factory(name, type) {
         switch (type) {
             case '文科':
