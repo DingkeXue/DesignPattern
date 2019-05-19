@@ -14,4 +14,5 @@
 
     let student1 = new Student('小花', 12, 34);
     console.log(student1.greeting());
+
 })();
