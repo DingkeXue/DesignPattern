@@ -22,5 +22,9 @@ let testModule = (function () {
 })();
 
 // usage
+// output: undefined  counter是私有变量
+console.log(testModule.counter);
+
 testModule.incrementCounter();
+// Output: 1
 testModule.resetCounter();
