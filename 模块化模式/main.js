@@ -47,8 +47,33 @@ let basketModule = (function () {
 
     // return an object exposed to the public
     return {
+        // add items to the basket
         addItem: function (item) {
             basket.push(item)
+        },
+
+        // get the count of items in basket
+        getItemCount: function () {
+            return basket.length;
+        },
+
+        // public methods
+        doSomethingPublic: doSomethingPrivate,
+
+        // get total price
+        getTotal: function () {
+            let count = this.getItemCount(), price = 0;
+
+            while (count --) {
+                price += basket[count].price;
+            }
+            return price;
         }
     }
 })();
+
+// usage
+basketModule.addItem({name: 'Apple', price: 22});
+basketModule.addItem({name: 'bread', price: 45});
+console.log(basketModule.getTotal());
+
