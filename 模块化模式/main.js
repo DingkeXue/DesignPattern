@@ -28,3 +28,27 @@ console.log(testModule.counter);
 testModule.incrementCounter();
 // Output: 1
 testModule.resetCounter();
+
+
+/*
+* 实例2 购物车
+* */
+let basketModule = (function () {
+    // private
+    let basket = [];
+
+    function doSomethingPrivate() {
+        // ...
+    }
+
+    function doSomethingElsePrivate() {
+        // ...
+    }
+
+    // return an object exposed to the public
+    return {
+        addItem: function (item) {
+            basket.push(item)
+        }
+    }
+})();
