@@ -9,11 +9,13 @@
 
     }
 
+    // 更新实例中的金额
     function updateBalance() {
         var resource = new Resource();
         update.innerText = resource.balance;
     }
 
+    // 创建不同部门
     function Division(selector) {
 
         var resource = new Resource();
@@ -38,6 +40,7 @@
         });
     }
 
+    // 如果存在单例实例，直接返回，如果不存在，创建一个
     function Resource() {
         if (Resource.instance) {
             return Resource.instance;
