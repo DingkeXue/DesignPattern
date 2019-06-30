@@ -63,7 +63,7 @@
     let zff = new Factory('student');
     console.log(lbb, zff);
 
-    // 安全工厂模式
+    // 安全工厂模式 如果是通过new创建的实例，那么直接返回，否则创建一个新实例
     function SecureFactory(type, content) {
         if (this instanceof SecureFactory) {
             let res = new this[type](content);
