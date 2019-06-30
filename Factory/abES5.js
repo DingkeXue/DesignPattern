@@ -4,6 +4,7 @@
 * */
 
 ;(function () {
+    // 创建学生、老师实例
     function Student(name) {
         this.name = name;
     }
@@ -12,6 +13,7 @@
         this.name = name;
     }
 
+    // 创建学生、老师工厂
     function StudentFactory() {
         return new Student();
     }
@@ -21,6 +23,7 @@
         return new Teacher(this.name);
     }
 
+    // 对不同对象选择不同工厂
     function userProducer(factory) {
         switch (factory) {
             case 'student':
