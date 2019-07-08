@@ -28,13 +28,10 @@
         switch (factory) {
             case 'student':
                 return StudentFactory;
-                break;
             case 'teacher':
                 return TeacherFactory;
-                break;
             default:
                 throw '错误';
-                break;
         }
     }
 
