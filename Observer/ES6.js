@@ -1,4 +1,33 @@
 ;(function () {
+    // 简单型
+    class Subject {
+        constructor() {
+            this.subs = [];
+        }
+        addSub(sub) {
+            this.subs.push(sub);
+        }
+        pub(msg) {
+            this.subs.forEach(sub => {
+                sub.notify(msg);
+            })
+        }
+    }
+
+    class Observer {
+        constructor(name) {
+         this.name = name;
+        }
+        notify(msg) {
+            console.log(msg);
+        }
+    }
+
+    let observer = new Observer('Bar');
+    let subject = new Subject();
+    subject.addSub(observer);
+    subject.pub('new message');
+
     class User {
         constructor(name) {
             this.name = name;
