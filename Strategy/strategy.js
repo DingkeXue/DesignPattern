@@ -37,14 +37,13 @@ LevelC.prototype.calc = function (bonus) {
 /*==============定义算法结束===========*/
 /*==============定义策略开始===========*/
 function Strategy() {
-    this.bonus = null;
     this.strategy = null;
 }
 Strategy.prototype.setStrategy = function (strategy) {
     this.strategy = strategy;
 };
-Strategy.prototype.getBonus = function (bonus) {
-    return this.strategy.calc(bonus);
+Strategy.prototype.getBonus = function (salary) {
+    return this.strategy.calc(salary);
 };
 /*==============定义策略结束===========*/
 let st = new Strategy();
