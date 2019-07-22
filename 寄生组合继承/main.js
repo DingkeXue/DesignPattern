@@ -9,13 +9,13 @@ SuperType.prototype.sayName = function () {
 };
 
 function SubType(name, age) {
-    // 第二次调用父类构造函数
+    // 继承父类属性。第二次调用父类构造函数
     SuperType.call(this, name);
 
     this.age = age;
 }
 
-// 创建子类原型，第一次调用父类构造函数
+// 创建子类原型，继承父类方法。第一次调用父类构造函数
 SubType.prototype = new SuperType();
 
 // 子类原型方法，一定要在指定原型之后创建
